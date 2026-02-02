@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Recruiters Are Using AI Images in Hiring</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Applied AI Hiring & HR</h1>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>How Recruiters Are Using AI Images in Hiring</h2>
+    <p class="post-date-page">January 31, 2026</p>
+
+    <p>
+      AI-generated images are starting to appear in hiring and HR workflows, especially in job postings,
+      employer branding, and recruitment marketing. Instead of paying for custom photoshoots or stock images,
+      companies can generate visuals that match their roles and culture instantly.
+    </p>
+
+    <!-- IMAGE 1 -->
+    <img src="images/ai-hiring-1.png" alt="AI-generated image of a recruiter reviewing candidates on a laptop" />
+
+    <p>
+      These images are often used on career pages, LinkedIn job posts, and recruiting ads. While this can save
+      time and money, it also raises questions about authenticity and whether candidates feel misled by
+      overly polished AI visuals.
+    </p>
+
+    <!-- IMAGE 2 -->
+    <img src="images/ai-hiring-2.png" alt="AI-generated illustration representing automated hiring technology" />
+
+    <p>
+      My take: AI-generated images are fine as long as they’re used honestly. They should support recruiting,
+      not fake a company culture that doesn’t exist. Like other hiring AI tools, transparency matters.
+    </p>
+
+    <!-- IMAGE 3 (optional but recommended) -->
+    <img src="images/ai-hiring-3.png" alt="AI-generated visual showing human and AI collaboration in HR" />
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Applied AI Hiring & HR</p>
+  </footer>
+</body>
+</html>

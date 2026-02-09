@@ -1,76 +1,139 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f6f7fb;
-  color: #111;
+/* ===== Base / Reset ===== */
+* {
+  box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.65;              /* Typography improvement */
+  font-size: 16px;                /* Typography improvement */
+  color: #0f172a;                 /* Intentional body text color */
+  background: #f6f7fb;            /* Intentional background color */
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;            /* Consistent, clean look */
+  margin: 16px 0;
+}
+
+/* ===== Header / Nav ===== */
 .site-header {
-  background: #111;
-  color: white;
-  padding: 20px;
+  background: #0f172a;            /* Color palette: dark navy */
+  color: #ffffff;
+  padding: 22px 18px;
+  border-bottom: 4px solid #1d4ed8; /* Color palette accent */
 }
 
 .site-header h1 {
   margin: 0;
-  font-size: 28px;
+  font-size: 30px;                /* Visual hierarchy */
+  letter-spacing: 0.2px;
 }
 
 .topic {
-  margin: 8px 0 0 0;
-  opacity: 0.9;
-  line-height: 1.4;
+  margin: 10px 0 0 0;
+  opacity: 0.92;
+  max-width: 900px;
 }
 
 .nav {
-  margin-top: 12px;
+  margin-top: 14px;
 }
 
 .nav a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   margin-right: 14px;
   font-weight: bold;
+  padding: 8px 10px;              /* Usability improvement */
+  border-radius: 8px;
+  display: inline-block;
 }
 
+.nav a:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* ===== Layout / Container ===== */
 .container {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
+  max-width: 900px;               /* Layout: reasonable line length */
+  margin: 28px auto;
+  padding: 26px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); /* Subtle polish */
 }
 
+/* Headings: clear hierarchy */
+.container h2 {
+  margin-top: 0;
+  font-size: 24px;
+  letter-spacing: 0.2px;
+}
+
+.container p {
+  margin: 0 0 14px 0;
+}
+
+/* ===== Post List (Dashboard Format) ===== */
 .post-list {
   list-style: none;
   padding-left: 0;
+  margin: 14px 0 0 0;
 }
 
 .post-list li {
-  padding: 12px 0;
-  border-bottom: 1px solid #ddd;
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.post-list li:last-child {
+  border-bottom: none;
 }
 
 .post-list a {
   text-decoration: none;
-  font-size: 18px;
-  color: #111;
-  font-weight: bold;
+  font-size: 18px;                /* Hierarchy */
+  color: #1d4ed8;                 /* Accent color */
+  font-weight: 700;
+}
+
+.post-list a:hover {
+  text-decoration: underline;
 }
 
 .post-date {
   display: block;
-  margin-top: 4px;
-  color: #555;
+  margin-top: 6px;
+  color: #475569;
+  font-size: 14px;
 }
 
+/* ===== Post Page Date ===== */
 .post-date-page {
-  color: #555;
+  color: #475569;
+  font-style: italic;
+  margin-bottom: 18px;
+}
+
+/* ===== Captions for Purposeful Placement ===== */
+.image-caption {
+  margin-top: -6px;
+  margin-bottom: 18px;
+  color: #475569;
+  font-size: 14px;
   font-style: italic;
 }
 
+/* ===== Footer ===== */
 .site-footer {
   text-align: center;
   padding: 18px;
-  color: #666;
+  color: #64748b;
 }
+

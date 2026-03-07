@@ -1,4 +1,3 @@
-/* ===== Base / Reset ===== */
 * {
   box-sizing: border-box;
 }
@@ -6,33 +5,30 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  line-height: 1.65;              /* Typography improvement */
-  font-size: 16px;                /* Typography improvement */
-  color: #0f172a;                 /* Intentional body text color */
-  background: #f6f7fb;            /* Intentional background color */
+  line-height: 1.65;
+  font-size: 16px;
+  color: #0f172a;
+  background: #f6f7fb;
 }
 
-/* Make images responsive */
 img {
   max-width: 100%;
   height: auto;
   display: block;
-  border-radius: 10px;            /* Consistent, clean look */
+  border-radius: 10px;
   margin: 16px 0;
 }
 
-/* ===== Header / Nav ===== */
 .site-header {
-  background: #0f172a;            /* Color palette: dark navy */
-  color: #ffffff;
+  background: #0f172a;
+  color: white;
   padding: 22px 18px;
-  border-bottom: 4px solid #1d4ed8; /* Color palette accent */
+  border-bottom: 4px solid #1d4ed8;
 }
 
 .site-header h1 {
   margin: 0;
-  font-size: 30px;                /* Visual hierarchy */
-  letter-spacing: 0.2px;
+  font-size: 30px;
 }
 
 .topic {
@@ -46,11 +42,11 @@ img {
 }
 
 .nav a {
-  color: #ffffff;
+  color: white;
   text-decoration: none;
   margin-right: 14px;
   font-weight: bold;
-  padding: 8px 10px;              /* Usability improvement */
+  padding: 8px 10px;
   border-radius: 8px;
   display: inline-block;
 }
@@ -59,28 +55,29 @@ img {
   background: rgba(255, 255, 255, 0.12);
 }
 
-/* ===== Layout / Container ===== */
 .container {
-  max-width: 900px;               /* Layout: reasonable line length */
+  max-width: 900px;
   margin: 28px auto;
   padding: 26px;
-  background: #ffffff;
+  background: white;
   border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); /* Subtle polish */
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
 }
 
-/* Headings: clear hierarchy */
 .container h2 {
   margin-top: 0;
   font-size: 24px;
-  letter-spacing: 0.2px;
+}
+
+.container h3 {
+  font-size: 20px;
+  margin-top: 24px;
 }
 
 .container p {
   margin: 0 0 14px 0;
 }
 
-/* ===== Post List (Dashboard Format) ===== */
 .post-list {
   list-style: none;
   padding-left: 0;
@@ -98,8 +95,8 @@ img {
 
 .post-list a {
   text-decoration: none;
-  font-size: 18px;                /* Hierarchy */
-  color: #1d4ed8;                 /* Accent color */
+  font-size: 18px;
+  color: #1d4ed8;
   font-weight: 700;
 }
 
@@ -114,14 +111,12 @@ img {
   font-size: 14px;
 }
 
-/* ===== Post Page Date ===== */
 .post-date-page {
   color: #475569;
   font-style: italic;
   margin-bottom: 18px;
 }
 
-/* ===== Captions for Purposeful Placement ===== */
 .image-caption {
   margin-top: -6px;
   margin-bottom: 18px;
@@ -130,10 +125,65 @@ img {
   font-style: italic;
 }
 
-/* ===== Footer ===== */
+.section-divider {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 26px 0;
+}
+
+.featured-card {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-left: 6px solid #1d4ed8;
+  border-radius: 14px;
+  padding: 18px;
+  margin-top: 14px;
+}
+
+.featured-card h3 {
+  margin: 8px 0 6px 0;
+  font-size: 20px;
+}
+
+.featured-card h3 a {
+  color: #0f172a;
+  text-decoration: none;
+}
+
+.featured-card h3 a:hover {
+  text-decoration: underline;
+}
+
+.featured-meta {
+  margin: 0 0 10px 0;
+  color: #475569;
+  font-size: 14px;
+}
+
+.featured-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: 700;
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+.featured-link:hover {
+  text-decoration: underline;
+}
+
+.post-tag {
+  display: inline-block;
+  background: #dbeafe;
+  color: #1e3a8a;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
 .site-footer {
   text-align: center;
   padding: 18px;
   color: #64748b;
 }
-
